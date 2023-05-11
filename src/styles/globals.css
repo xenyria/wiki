@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.markdown h1 {
+  @apply text-4xl font-bold mb-2;
+}
+
+.markdown h2 {
+  @apply text-2xl font-semibold mt-4 mb-1.5;
+}
+
+.markdown h3 {
+  @apply text-lg font-semibold mt-1 mb-1;
+}
+
+.markdown p {
+  @apply mb-2 text-black/75 dark:text-white/75;
+}
+
+.markdown b {
+  @apply text-black dark:text-white;
+}
+
+.markdown a {
+  @apply text-black dark:text-white border-b-2 border-b-green-400/50 hover:border-b-2 hover:border-b-green-400/75 transition-all duration-200;
+}
+
+.markdown ul {
+  @apply list-["-"] list-outside ml-2 mb-2;
+}
+
+.markdown ul li {
+  @apply mb-1 pl-2 leading-snug;
+}
+
+/* ===== Scrollbar CSS ===== */
+#scroll {
+  scrollbar-width: auto;
+  scrollbar-color: #8f54a0 #ffffff;
+}
+
+#scroll::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+#scroll::-webkit-scrollbar-track {
+  @apply bg-white dark:bg-dark-900;
+}
+
+#scroll::-webkit-scrollbar-thumb {
+  @apply rounded-[50px] border-none bg-black/50 dark:bg-white/25;
+}
