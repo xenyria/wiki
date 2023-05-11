@@ -49,16 +49,20 @@ export function Navbar({
               onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
             />
           </div>
+          {/*
           <div className="block md:hidden p-2 cursor-pointer bg-black bg-opacity-0 hover:bg-opacity-10 dark:bg-white dark:bg-opacity-0 dark:hover:bg-opacity-10 rounded-md transition duration-200">
             <MagnifyingGlass weight="regular" size={18} />
           </div>
+          */}
         </div>
+        {/*
         <div className="hidden md:flex absolute w-full justify-center items-center pointer-events-none">
           <div className="cursor-pointer bg-black bg-opacity-[4%] dark:bg-white dark:bg-opacity-5 hover:bg-opacity-[7%] dark:hover:bg-opacity-10 py-2 px-4 rounded-md w-full max-w-sm text-sm text-black/50 dark:text-white/50 pointer-events-auto flex justify-between items-center border border-black/0 hover:border-black/10 dark:border-white/0 dark:hover:border-white/25 transition duration-200">
             <span>Search...</span>
             <span className="text-xs text-black/25 dark:text-white/25">⌘K</span>
           </div>
         </div>
+        */}
       </div>
     </div>
   );

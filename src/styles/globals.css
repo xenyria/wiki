@@ -14,20 +14,25 @@
   @apply text-lg font-semibold mt-1 mb-1;
 }
 
+.markdown h4 {
+  @apply text-base font-semibold;
+}
+
 .markdown p {
   @apply mb-2 text-black/75 dark:text-white/75;
 }
 
-.markdown b {
+.markdown b,
+.markdown strong {
   @apply text-black dark:text-white;
 }
 
 .markdown a {
-  @apply text-black dark:text-white border-b-2 border-b-green-400/50 hover:border-b-2 hover:border-b-green-400/75 transition-all duration-200;
+  @apply text-black dark:text-white border-b-2 border-b-green-500/50 dark:border-b-green-400/50 hover:border-b-2 dark:hover:border-b-green-400/75 hover:border-b-green-500 transition-all duration-200;
 }
 
 .markdown ul {
-  @apply list-["-"] list-outside ml-2 mb-2;
+  @apply list-["-"] list-outside ml-2 mb-2 text-black/75 dark:text-white/75;
 }
 
 .markdown ul li {
@@ -35,20 +40,24 @@
 }
 
 /* ===== Scrollbar CSS ===== */
-#scroll {
+#scroll,
+#mobileSidebar {
   scrollbar-width: auto;
   scrollbar-color: #8f54a0 #ffffff;
 }
 
-#scroll::-webkit-scrollbar {
+#scroll::-webkit-scrollbar,
+#mobileSidebar::-webkit-scrollbar {
   width: 5px;
   height: 5px;
 }
 
-#scroll::-webkit-scrollbar-track {
+#scroll::-webkit-scrollbar-track,
+#mobileSidebar::-webkit-scrollbar-track {
   @apply bg-white dark:bg-dark-900;
 }
 
-#scroll::-webkit-scrollbar-thumb {
+#scroll::-webkit-scrollbar-thumb,
+#mobileSidebar::-webkit-scrollbar-thumb {
   @apply rounded-[50px] border-none bg-black/50 dark:bg-white/25;
 }

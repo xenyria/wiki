@@ -1,13 +1,14 @@
-const data = {
+const repo = {
   owner: "OfficialCRUGG",
   name: "xenyria-wiki",
 };
 
-const graphqlQuery = `{
-  repository(owner: "${data.owner}", name: "${data.name}") {
+export async function getPageMetadata(path: string) {
+  const graphqlQuery = `{
+  repository(owner: "${repo.owner}", name: "${repo.name}") {
     object(expression: "main") {
       ... on Commit {
-        history(path: "MAINTAINERS") {
+        history(path: "${path}") {
           nodes {
             authoredDate
             author {
@@ -26,3 +27,16 @@ const graphqlQuery = `{
     }
   }
 }`;
+
+  return await (
+    await fetch("https://api.github.com/graphql", {
+      method: "POST",
+      headers: {
+        Authorization: `bearer ${process.env.GITHUB_TOKEN}`,
+      },
+      body: JSON.stringify({
+        query: graphqlQuery,
+      }),
+    })
+  ).json();
+}

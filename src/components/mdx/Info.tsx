@@ -27,7 +27,9 @@ export function Info({
         </>
       )}
       {children && (
-        <div className="w-full text-md md:text-sm font-medium">{children}</div>
+        <div className="w-full text-base md:text-sm font-medium">
+          {children}
+        </div>
       )}
     </div>
   );
