@@ -40,7 +40,7 @@ export function DocsLayout({ children }: PropsWithChildren<{}>) {
       >
         <div className="flex flex-col min-h-screen bg-white dark:bg-dark-900 dark:text-white transition duration-200">
           {config.message && message && (
-            <div className="bg-green-500 dark:bg-black text-white flex justify-center items-center py-3 md:py-2 relative px-6">
+            <div className="hidden md:flex bg-green-500 dark:bg-black text-white justify-center items-center py-3 md:py-2 relative px-6">
               {config.message.icon &&
                 (() => {
                   const Icon = config.message.icon;
