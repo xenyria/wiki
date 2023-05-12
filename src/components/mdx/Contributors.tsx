@@ -38,7 +38,9 @@ export function Contributors() {
         }
         return acc;
       }, []);
-      setContributors(result);
+      setContributors(
+        result.sort((a: any, b: any) => b.pagesContributed - a.pagesContributed)
+      );
     }
     fetchContributors();
   });
