@@ -22,6 +22,10 @@
   @apply mb-2 text-black/75 dark:text-white/75;
 }
 
+.markdown .md-info p {
+  @apply text-black dark:text-white mb-0;
+}
+
 .markdown b,
 .markdown strong {
   @apply text-black dark:text-white;
