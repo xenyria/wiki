@@ -1,8 +1,17 @@
 import { MDXProvider } from "@mdx-js/react";
 import { PropsWithChildren } from "react";
-import { Info, PaintSquadModeGrid, Soon, Stub, Tabs, Tab } from "./mdx";
+import {
+  Contributors,
+  Info,
+  PaintSquadModeGrid,
+  Soon,
+  Stub,
+  Tabs,
+  Tab,
+} from "./mdx";
 
 const components = {
+  Contributors,
   Info,
   Stub,
   Soon,

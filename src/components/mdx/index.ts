@@ -1,3 +1,4 @@
+export * from "./Contributors";
 export * from "./Info";
 export * from "./PaintSquadModeGrid";
 export * from "./Soon";
