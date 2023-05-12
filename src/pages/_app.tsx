@@ -1,6 +1,7 @@
 import { DocsLayout } from "@/components";
 import data from "@/data";
 import "@/styles/globals.css";
+import "@/styles/code.css";
 import { NextSeo } from "next-seo";
 import type { AppProps } from "next/app";
 import { useRouter } from "next/router";
