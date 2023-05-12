@@ -1,4 +1,11 @@
-import { BookOpen, Car, Gavel, PaintRoller, Plug } from "@phosphor-icons/react";
+import {
+  BookOpen,
+  Car,
+  Gavel,
+  PaintRoller,
+  PencilSimple,
+  Plug,
+} from "@phosphor-icons/react";
 import { SidebarCategory } from "./types/sidebar";
 
 const data: SidebarCategory[] = [
@@ -262,6 +269,86 @@ const data: SidebarCategory[] = [
           {
             title: "Privacy Policy",
             slug: "privacy-policy",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    title: "Meta",
+    slug: "meta",
+    icon: PencilSimple,
+    hidden: true,
+    sidebar: [
+      {
+        heading: "Meta",
+        pages: [
+          {
+            title: "About this Wiki",
+            slug: "",
+          },
+        ],
+      },
+      {
+        heading: "Contribution Guide",
+        pages: [
+          {
+            title: "Prepraration",
+            slug: "preparation",
+          },
+          {
+            title: "Writing",
+            slug: "writing",
+          },
+          {
+            title: "Before Submitting",
+            slug: "before-submitting",
+          },
+          {
+            title: "Pull Request",
+            slug: "pull-request",
+          },
+          {
+            title: "Additional Info",
+            slug: "additional-info",
+          },
+        ],
+      },
+      {
+        heading: "Cheat Sheets",
+        pages: [
+          {
+            title: "Markdown",
+            slug: "markdown-cheat-sheet",
+          },
+          {
+            title: "Components",
+            slug: "components-cheat-sheet",
+          },
+        ],
+      },
+      {
+        heading: "Miscellaneous",
+        pages: [
+          {
+            title: "Writing Guidelines",
+            slug: "writing-guidelines",
+          },
+          {
+            title: "Changelog",
+            slug: "changelog",
+          },
+          {
+            title: "Contributors",
+            slug: "contributors",
+          },
+          {
+            title: "Missing Pages",
+            slug: "missing-pages",
+          },
+          {
+            title: "License",
+            slug: "license",
           },
         ],
       },
