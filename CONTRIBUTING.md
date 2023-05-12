@@ -4,7 +4,9 @@ When contributing larger changes to this repository, please first discuss the ch
 
 ## Conventional Commits
 
-This repository uses [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) to automatically generate changelogs and for easier reading of commit messages. Please follow the commit message format described in the specification.
+~~This repository uses [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) to automatically generate changelogs and for easier reading of commit messages. Please follow the commit message format described in the specification.~~
+
+While using conventional commits is still encouraged, it is not needed for this specific repository.
 
 ## Pull Request Process
 
