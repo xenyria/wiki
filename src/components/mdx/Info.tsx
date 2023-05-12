@@ -11,7 +11,7 @@ export function Info({
 }>) {
   const Icon = icon;
   return (
-    <div className="bg-black bg-opacity-5 dark:bg-white dark:bg-opacity-10 p-3 flex items-center text-black dark:text-white rounded-md my-2">
+    <div className="bg-black bg-opacity-5 dark:bg-white dark:bg-opacity-10 pt-3 px-3 pb-1 flex items-center text-black dark:text-white rounded-md my-2">
       {Icon && (
         <>
           <Icon
