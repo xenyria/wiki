@@ -293,7 +293,7 @@ const data: SidebarCategory[] = [
         heading: "Contribution Guide",
         pages: [
           {
-            title: "Prepraration",
+            title: "Preparation",
             slug: "preparation",
           },
           {
