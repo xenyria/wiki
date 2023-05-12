@@ -9,8 +9,10 @@ export function Stub() {
         weight: "fill",
       }}
     >
-      This page is a stub. While it already contains some information, this
-      information is not complete yet.
+      <p>
+        This page is a stub. While it already contains some information, this
+        information is not complete yet.
+      </p>
     </Info>
   );
 }
