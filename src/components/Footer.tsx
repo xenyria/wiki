@@ -23,21 +23,16 @@ export function Footer() {
           © 2023 Xenyria.net. Available on{" "}
           <a
             className="underline"
-            href="https://github.com/OfficialCRUGG/xenyria-wiki"
+            href="https://github.com/XenyriaNET/wiki"
             target="_blank"
             rel="noopener noreferrer"
           >
             GitHub
           </a>{" "}
           under the{" "}
-          <a
-            className="underline"
-            href="https://github.com/OfficialCRUGG/xenyria-wiki/blob/main/LICENSE"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <Link className="underline" href="/meta/license">
             MIT License
-          </a>
+          </Link>
           .
         </span>
         <div className="flex space-x-2">
