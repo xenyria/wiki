@@ -47,7 +47,7 @@ export function ContentFooter() {
       }
     }
     fetchLastModified();
-  }, [pathnameParts, previouslyFetched]);
+  }, [pathnameParts, previouslyFetched, pathname]);
 
   return (
     <div className="flex justify-between items-start py-4 mt-4 border-t border-black/10 dark:border-white/10">
