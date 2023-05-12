@@ -39,6 +39,14 @@
   @apply mb-1 pl-2 leading-snug;
 }
 
+.markdown ol {
+  @apply list-decimal list-outside ml-4 mb-2 text-black/75 dark:text-white/75;
+}
+
+.markdown ol li {
+  @apply mb-1 pl-2 leading-snug;
+}
+
 /* ===== Scrollbar CSS ===== */
 #scroll,
 #mobileSidebar {
