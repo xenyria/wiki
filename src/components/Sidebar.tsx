@@ -9,7 +9,7 @@ export function Sidebar({
 }) {
   return (
     <>
-      <div className="hidden md:flex flex-col space-y-6 pr-4 pt-4 border-r border-black/10 dark:border-r dark:border-r-white/10 w-[24rem] pb-4">
+      <div className="hidden md:flex flex-col space-y-6 pr-4 pt-4 border-r border-black/10 dark:border-r dark:border-r-white/10 w-[18rem] pb-4 shrink-0">
         <SidebarContent />
       </div>
       <div
