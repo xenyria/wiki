@@ -4,7 +4,7 @@ export function Footer() {
   const footerLinks = [
     {
       text: "Legal Notice",
-      href: "/legal/legal-notice",
+      href: "/legal",
     },
     {
       text: "Privacy Policy",

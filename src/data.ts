@@ -1,4 +1,4 @@
-import { BookOpen, Car, PaintRoller, Plug } from "@phosphor-icons/react";
+import { BookOpen, Car, Gavel, PaintRoller, Plug } from "@phosphor-icons/react";
 import { SidebarCategory } from "./types/sidebar";
 
 const data: SidebarCategory[] = [
@@ -241,6 +241,27 @@ const data: SidebarCategory[] = [
           {
             title: "Introduction",
             slug: "",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    title: "Legal",
+    slug: "legal",
+    icon: Gavel,
+    hidden: true,
+    sidebar: [
+      {
+        heading: "Legal Documents",
+        pages: [
+          {
+            title: "Legal Notice",
+            slug: "",
+          },
+          {
+            title: "Privacy Policy",
+            slug: "privacy-policy",
           },
         ],
       },

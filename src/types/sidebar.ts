@@ -13,6 +13,7 @@ export interface SidebarSection {
 export interface SidebarCategory {
   title: string;
   default?: boolean;
+  hidden?: boolean;
   slug: string;
   icon?: Icon;
   sidebar: SidebarSection[];

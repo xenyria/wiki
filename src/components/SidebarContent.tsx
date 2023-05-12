@@ -12,30 +12,33 @@ export function SidebarContent() {
   return (
     <>
       <div className="flex flex-col space-y-2 pl-2 pr-4">
-        {data.map(({ title, slug, icon: Icon }) => (
-          <Link key={title} href={`/${slug}`}>
-            <div className="flex items-center space-x-3 group cursor-pointer">
-              <div
-                className={`h-7 w-7 ${
-                  currentCategory?.slug === slug
-                    ? "bg-green-500 bg-opacity-75 text-white group-hover:bg-green-500 group-hover:bg-opacity-100"
-                    : "bg-black bg-opacity-5 dark:bg-white dark:bg-opacity-5 text-black/75 dark:text-white/50 group-hover:bg-black group-hover:bg-opacity-10 dark:group-hover:bg-white dark:group-hover:bg-opacity-10"
-                } rounded-md flex items-center justify-center transition duration-200`}
-              >
-                {Icon && <Icon size={19} weight="fill" />}
-              </div>
-              <div
-                className={`${
-                  currentCategory?.slug === slug
-                    ? "text-black/75 dark:text-white/75 group-hover:text-black dark:group-hover:text-white font-semibold"
-                    : "text-black/50 dark:text-white/50 group-hover:text-black/75 dark:group-hover:text-white/75 font-medium"
-                } font-medium transition duration-200`}
-              >
-                {title}
-              </div>
-            </div>
-          </Link>
-        ))}
+        {data.map(
+          ({ title, slug, hidden, icon: Icon }) =>
+            (!hidden || currentCategory?.slug === slug) && (
+              <Link key={title} href={`/${slug}`}>
+                <div className="flex items-center space-x-3 group cursor-pointer">
+                  <div
+                    className={`h-7 w-7 ${
+                      currentCategory?.slug === slug
+                        ? "bg-green-500 bg-opacity-75 text-white group-hover:bg-green-500 group-hover:bg-opacity-100"
+                        : "bg-black bg-opacity-5 dark:bg-white dark:bg-opacity-5 text-black/75 dark:text-white/50 group-hover:bg-black group-hover:bg-opacity-10 dark:group-hover:bg-white dark:group-hover:bg-opacity-10"
+                    } rounded-md flex items-center justify-center transition duration-200`}
+                  >
+                    {Icon && <Icon size={19} weight="fill" />}
+                  </div>
+                  <div
+                    className={`${
+                      currentCategory?.slug === slug
+                        ? "text-black/75 dark:text-white/75 group-hover:text-black dark:group-hover:text-white font-semibold"
+                        : "text-black/50 dark:text-white/50 group-hover:text-black/75 dark:group-hover:text-white/75 font-medium"
+                    } font-medium transition duration-200`}
+                  >
+                    {title}
+                  </div>
+                </div>
+              </Link>
+            )
+        )}
       </div>
       {currentCategory?.sidebar?.map(({ heading, pages }) => (
         <div key={heading} className="flex flex-col pl-2 pr-4 space-y-1">
