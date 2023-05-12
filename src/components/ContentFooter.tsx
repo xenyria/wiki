@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import { PencilSimple } from "@phosphor-icons/react";
 import { DateTime } from "luxon";
+import Link from "next/link";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 
@@ -86,9 +87,12 @@ export function ContentFooter() {
         </a>
       </div>
       <div className="flex flex-col items-end space-y-1">
-        <span className="text-sm text-black/50 dark:text-white/50">
+        <Link
+          href="/meta/contributors"
+          className="-my-1 text-sm text-black/50 dark:text-white/50 hover:text-black/75 dark:hover:text-white/75 transition duration-20"
+        >
           Contributors
-        </span>
+        </Link>
         <div className="flex space-x-1.5">
           {contributors !== null
             ? contributors.map((contributor) => (
