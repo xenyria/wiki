@@ -53,7 +53,7 @@ async function addData(file: string) {
   };
   const data = await (
     await fetch(
-      `https://api.github.com/repos/OfficialCRUGG/xenyria-wiki/commits?path=${file}`,
+      `https://api.github.com/repos/XenyriaNET/wiki/commits?path=${file}`,
       {
         headers: {
           Authorization: `bearer ${process.env.GITHUB_TOKEN}`,

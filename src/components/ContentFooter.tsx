@@ -53,7 +53,7 @@ export function ContentFooter() {
     <div className="flex justify-between items-start py-4 mt-4 border-t border-black/10 dark:border-white/10">
       <div className="flex flex-col text-sm space-y-1">
         <a
-          href={`https://github.com/OfficialCRUGG/xenyria-wiki/commits/main/src/pages/${pathnameParts.join(
+          href={`https://github.com/XenyriaNET/wiki/commits/main/src/pages/${pathnameParts.join(
             "/"
           )}.mdx`}
           target="_blank"
@@ -74,7 +74,7 @@ export function ContentFooter() {
           </div>
         </a>
         <a
-          href={`https://github.com/OfficialCRUGG/xenyria-wiki/edit/main/src/pages/${pathnameParts.join(
+          href={`https://github.com/XenyriaNET/wiki/edit/main/src/pages/${pathnameParts.join(
             "/"
           )}.mdx`}
           target="_blank"
