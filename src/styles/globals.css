@@ -51,6 +51,35 @@
   @apply mb-1 pl-2 leading-snug;
 }
 
+.markdown table {
+  @apply w-full text-black/75 dark:text-white/75;
+}
+
+.markdown table td,
+.markdown table th {
+  @apply border border-black/10 dark:border-white/10 px-2 py-1;
+}
+
+.markdown table th {
+  @apply font-semibold text-left;
+}
+
+.markdown table th[align="center"] {
+  @apply text-center;
+}
+
+.markdown table th[align="right"] {
+  @apply text-right;
+}
+
+.markdown table thead tr {
+  @apply bg-black bg-opacity-5 dark:bg-white dark:bg-opacity-5;
+}
+
+.markdown table tbody tr:nth-child(even) {
+  @apply bg-black bg-opacity-[3%] dark:bg-white dark:bg-opacity-[3%];
+}
+
 /* ===== Scrollbar CSS ===== */
 #scroll,
 #mobileSidebar {
