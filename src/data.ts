@@ -29,6 +29,19 @@ const data: SidebarCategory[] = [
         ],
       },
       {
+        heading: "Modifications",
+        pages: [
+          {
+            title: "Modpack",
+            slug: "modpack",
+          },
+          {
+            title: "XEEM",
+            slug: "xeem",
+          },
+        ],
+      },
+      {
         heading: "Resources",
         pages: [
           {
@@ -55,10 +68,6 @@ const data: SidebarCategory[] = [
           {
             title: "Applications",
             slug: "applications",
-          },
-          {
-            title: "Modifications",
-            slug: "modifications",
           },
         ],
       },
